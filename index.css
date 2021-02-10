@@ -2,7 +2,6 @@ body {
   font-family: "Roboto", sans-serif !important;
 }
 html{
-  
   scroll-behavior: smooth;
 }
 .primary {
@@ -177,9 +176,13 @@ p{
 .skills-icons {
   display: flex;
   font-size: 3.5rem;
+  flex-wrap: wrap;
 }
 .skills-icons div{
   margin: 20px
+}
+.menu{
+  display: none;
 }
 @keyframes rotation {
   from {
@@ -207,5 +210,14 @@ p{
   }
   .designation{
     margin: 1.5em 0;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .header{
+    display: none; 
+  }
+  .content{
+    margin-left: 0;
   }
 }
